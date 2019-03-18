@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activites.MainActivity">
+    
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="715dp"
+        android:layout_above="@+id/navigation"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+    
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#000"
+        android:checkedButton="@id/homeRB"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/homeRB"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:background="@drawable/home_radiobtn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+        
+        <RadioButton
+            android:id="@+id/cameraRB"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/camera_radiobtn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+        
+        <RadioButton
+            android:id="@+id/profileRB"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:background="@drawable/profile_radiobtn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+    
+    
+    </RadioGroup>
+
+</RelativeLayout>
